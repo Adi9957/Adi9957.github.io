@@ -289,7 +289,7 @@ tr {
       if (localData) {
         $("#tblData tbody").html("");
         let localArray = JSON.parse(localData);
-        let index = 0;
+        let index = 1;
         localArray.forEach(element => {
           let dynamicTR = "<tr>";
           dynamicTR = dynamicTR + "<td> " + index + "</td>";
@@ -314,7 +314,7 @@ tr {
       if (localData) {
         let localArray = JSON.parse(localData);
         const obj = {
-          id: localArray.length + 1,
+          id: localArray.length + 0,
           name: $("#txtName").val(),
           studentid: $("#txtstudentid").val(),
           mark: $("#txtMarks").val(),
